@@ -1,0 +1,17 @@
+Package: TAMirt
+Title: Software package for building, analyzing and plotting models from the TAM (Test Analysis Modules) package.
+Version: 0.0.1
+Authors@R: person("Andreas", "Fischer", email = "andreasfischer1985@web.de", role = c("aut", "cre"))
+Description: Software package for building, analyzing and plotting models from the TAM (Test Analysis Modules) package.
+Depends: R (>= 3.5.1)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Maintainer: 'Andreas Fischer' <andreasfischer1985@web.de>
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+Imports: psych,
+    TAM,
+    WrightMap,
+    mirt,
+    knitr
