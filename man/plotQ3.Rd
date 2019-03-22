@@ -4,7 +4,7 @@
 \alias{plotQ3}
 \title{Function plotQ3}
 \usage{
-plotQ3(model)
+plotQ3(model, cutoff = 0.3)
 }
 \description{
 Plots Matirx of absolute aQ3-values.

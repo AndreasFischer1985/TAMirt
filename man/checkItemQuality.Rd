@@ -4,7 +4,8 @@
 \alias{checkItemQuality}
 \title{Function checkItemQuality}
 \usage{
-checkItemQuality(data, deleted = NULL)
+checkItemQuality(data, exclude = NULL, cutoffs = c(0.2, 2, 2, 0.3),
+  reduce = T)
 }
 \description{
 Returns information on item fit based on data.
