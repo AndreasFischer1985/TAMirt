@@ -15,9 +15,10 @@ checkModelQuality <- function (data)
     iff = tam.fit(ta, progress = F)
     l = c(length(data[1, ]), ta$EAP, tam.wle(ta, progress = F)$WLE.rel[1], 
         a$total$std.alpha, min(a$item.stats$r.cor), mf$statlist$pmaxX2, 
-        mf$stat.MADaQ3$p, (-mf$fitstat[[1]]), (-mf$fitstat[[2]]), 
-        (-mf$fitstat[[3]]))
+        mf$stat.MADaQ3$p, logLik(ta), -AIC(ta), -BIC(ta), (-mf$fitstat[[1]]), 
+        (-mf$fitstat[[2]]), (-mf$fitstat[[3]]))
     names(l) = c("items", "EAPrel", "WLErel", "alpha", "minCPWC", 
-        "pmaxX2", "MADaQ3$p", "-MADCOV", "-SRMR", "-SRMSR")
+        "pmaxX2", "MADaQ3$p", "logLik", "AIC", "BIC", "-MADCOV", 
+        "-SRMR", "-SRMSR")
     return(cbind(`Goodness of fit` = l))
 }

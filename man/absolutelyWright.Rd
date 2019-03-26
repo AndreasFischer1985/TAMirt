@@ -4,7 +4,10 @@
 \alias{absolutelyWright}
 \title{Function absolutelyWright}
 \usage{
-absolutelyWright(dat1)
+absolutelyWright(dat1, report.alpha = T, main.title = "Wright Map",
+  axis.persons = "Persons", axis.items = "Items",
+  axis.logits = "Logits", item.prop = 0.5, show.axis.logits = "R",
+  item.side = WrightMap::itemClassic, dim.color = "#C6DBEF", ...)
 }
 \description{
 Plots Wright Map based on data.

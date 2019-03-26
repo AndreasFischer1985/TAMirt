@@ -4,7 +4,7 @@
 \alias{irt.model}
 \title{Function irt.model}
 \usage{
-irt.model(data, control = list(progress = F), ...)
+irt.model(data, control = list(progress = F), reduce = T, ...)
 }
 \description{
 Returns IRT-model based on binary response data.
